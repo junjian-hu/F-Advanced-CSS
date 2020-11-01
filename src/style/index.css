@@ -18,3 +18,56 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  background-color: black;
+  color: white;
+}
+
+.nav {
+  justify-content: space-around;
+  padding: 15px;
+}
+
+.main-container {
+  width: 95%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+}
+
+.left-nav {
+  flex-direction: column;
+  width: 15%;
+  border: 1px solid black;
+  justify-content: space-around;
+}
+
+.date-nav > li {
+  text-decoration: underline;
+  color: blue;
+}
+
+.left-nav > article {
+  padding: 15px;
+}
+
+.left-nav > article:first-child {
+  flex-direction: column;
+  background-color: lightgrey;
+}
+
+.content {
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  justify-content: space-around;
+}
