@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./src/style/index.css">
 </head>
 <body>
-  <header class="header">
+  <header id="header" class="header">
     <ul class="flex nav">
       <li>Home</li>
       <li>World</li>
@@ -47,36 +47,56 @@
       </article>
     </section>
     <section class="content flex">
-      <div>
+      <div class="flex content-left">
         <figure>
-          <img src="" alt="">
+          <img src="./src/img/demo-img-1.png" alt="demo-img-1">
           <figcaption>
             <h3>Article 1</h3>
             <span>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
               mauris condimentum nibh.</span>
+              <a class="link" href="#">View details >></a>
           </figcaption>
         </figure>
         <figure>
-          <img src="" alt="">
+          <img src="./src/img/demo-img-1.png" alt="demo-img-1">
           <figcaption>
             <h3>Article 1</h3>
             <span>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+              mauris condimentum nibh.Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
               mauris condimentum nibh.</span>
+              <a href="#" class="link">View details >></a>
           </figcaption>
         </figure>
       </div>
-      <figure>
-        <img src="" alt="">
+      <figure class="content-right">
+        <img src="./src/img/demo-img-1.png" alt="demo-img-1">
         <figcaption>
           <h3>Article 1</h3>
           <span>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-            condimentum nibh.</span>
+            condimentum nibh.Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+            mauris condimentum nibh.Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+            mauris condimentum nibh.</span>
+            <a href="#" class="link">View details >></a>
         </figcaption>
       </figure>
     </section>
-    <section></section>
+    <section class="sign-in flex flex-center">
+      <div class="flex flex-center">
+      <input type="text" placeholder="Email address" class="input-email">
+      <input type="password" placeholder="Password" class="input-password">
+      <div class="flex flex-center">
+        <input type="checkbox">
+        <span>Remember me</span>
+      </div>
+      <button class="sign-in-btn" type="button">Sign in</button>
+    </div>
+    </section>
   </main>
-  <footer></footer>
+  <footer class="flex flex-center">
+    <span>Advanced CSS homework build by <em>@Junjian Hu</em></span>
+    <br>
+    <a href="#header">Back to top</a>
+  </footer>
   <script src="src/app.js"></script>
 </body>
 </html>

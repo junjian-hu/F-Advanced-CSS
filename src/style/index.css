@@ -19,6 +19,15 @@ ul {
   padding: 0;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
+figure {
+  box-shadow: rgb(136, 136, 136) 1px 1px 5px;
+}
+
 .flex {
   display: flex;
 }
@@ -45,10 +54,14 @@ ul {
   flex: 1 1 auto;
 }
 
+.main-container > .sign-in {
+  align-items: center;
+  justify-content: center;
+}
+
 .left-nav {
   flex-direction: column;
   width: 15%;
-  border: 1px solid black;
   justify-content: space-around;
 }
 
@@ -63,11 +76,74 @@ ul {
 
 .left-nav > article:first-child {
   flex-direction: column;
-  background-color: lightgrey;
+  background-color: rgb(243, 243, 243);
 }
 
 .content {
   flex-wrap: wrap;
+  width: 65%;
   flex: 1 1 auto;
-  justify-content: space-around;
+}
+
+.content-left {
+  overflow: hidden;
+  width: 45%;
+  flex-direction: column;
+}
+
+.content-right {
+  overflow: hidden;
+  width: 45%;
+}
+
+.link {
+  text-decoration: none;
+  margin: 10px auto;
+  display: block;
+}
+
+.sign-in {
+  width: 15%;
+}
+
+.sign-in > div {
+  padding: 30px;
+  background-color: rgb(235, 235, 235);
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.input-email {
+  padding: 10px 20px;
+}
+
+.input-password {
+  padding: 10px 20px;
+  margin-bottom: 15px;
+}
+
+.sign-in-btn {
+  color: white;
+  padding: 10px 25px;
+  border-radius: 15px;
+  border-color: blue;
+  background-color: blue;
+  width: 100%;
+  margin-top: 20px;
+}
+
+footer {
+  flex-direction: column;
+  background-color:  rgb(235, 235, 235);
+  margin: auto 0;
+  height: 125px;
+  color: grey;
+}
+
+em {
+  text-decoration: underline;
+}
+
+figcaption {
+  margin: 0 20px;
 }
